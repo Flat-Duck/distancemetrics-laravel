@@ -1,0 +1,29 @@
+{
+    "name": "flat-duck/distancemetrics-laravel",
+    "description": "Laravel wrapper package for the Mapbox API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "A.Mahidwei",
+            "email": "a.mahidwei@outlook.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlatDuck\\Distancemetrics\\": "src/"
+        },
+        "files": [
+            "src/Helpers/dm.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FlatDuck\\Distancemetrics\\DistancemetricsServiceProvider"
+            ]
+        }
+    }
+}
